@@ -3,6 +3,12 @@
 \usepackage{blindtext}
 \usepackage{titlesec}
 \usepackage[czech]{babel}
+\usepackage{biblatex}
+\usepackage{csquotes}
+\addbibresource{zdroje.bib}
+
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 
 \begin{document}
 
@@ -20,15 +26,17 @@
 
 \section{Shrnutí}
 \section{Představení společnosti}
-\section{Popis podnikatelské příležitosti}
 \section{Produkt}
 \section{Realizace}
-\section{Zákazníci}
-\section{Konkurence}
+\section{Analýza trhu}
+\subsection{Zákazníci}
+\subsection{Konkurence}
 \section{Marketingový plán}
 \section{Finanční plán}
 \section{Rizika}
 \section{Závěr}
 \section{Zdroje}
+
+\printbibliography
 
 \end{document}
