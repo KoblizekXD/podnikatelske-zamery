@@ -8,18 +8,19 @@
 \usepackage{array}
 \usepackage{url}
 \usepackage[czech]{babel}
-\usepackage{biblatex}
+\usepackage[backend=biber,style=authoryear]{biblatex}
 \usepackage{csquotes}
 \usepackage{amsmath}
 \usepackage[bottom]{footmisc}
-\addbibresource{zdroje.bib}
+\usepackage{caption}
+\usepackage{tabularx}
+\addbibresource{./zdroje.bib}
 
 \usepackage{graphicx}
 
 \graphicspath{files/}
 
 \usepackage{tocloft}
-\usepackage{caption}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 
 \begin{document}
@@ -372,12 +373,11 @@ Naše cenová politika je postavená tak, aby reflektovala kvalitu našich produ
 a zároveň byla dostupná pro široké spektrum zákazníků.
 Ceny jsou stanoveny na základě nákladů na výrobu, marže a cenové konkurence.
 
-\setlength{\tabcolsep}{4pt}
 \renewcommand{\arraystretch}{1.2}
 
 \begin{table}[h!]
   \centering
-  \begin{tabular}{|p{3.5cm}||p{6cm}|p{3cm}|p{3cm}|}
+  \begin{tabularx}{\textwidth}{ |>{\raggedright\arraybackslash}X||>{\raggedright\arraybackslash}X|X|>{\raggedright\arraybackslash}X| }
     \hline
     \textbf{Produktová řada} & \textbf{Popis} & \textbf{Cena} & \textbf{Příklad} \\
     \hline
@@ -407,9 +407,8 @@ Ceny jsou stanoveny na základě nákladů na výrobu, marže a cenové konkuren
     & 1 500-2 000 Kč 
     & 2 čepice + přenosná taška zdarma \\
     \hline
-  \end{tabular}
+  \end{tabularx}
   \caption{Přehled produktových řad čepic a jejich cen}
-  \label{tab:product-lines}
 \end{table}
 
 
