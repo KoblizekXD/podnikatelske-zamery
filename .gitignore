@@ -307,4 +307,5 @@ TSWLatexianTemp*
 
 *.docx#
 
-.bbl*
+*.bbl*
+*.bcf*
