@@ -26,6 +26,7 @@
 \begin{document}
 
 \nocite{csob-podnikatelsky-plan}
+\nocite{pz-idoklad}
 \author{Jan Prokůpek, Miroslav Sklenář}
 \title{\textbf{Podnikatelský záměr}\break Hats for Cats s.r.o.}
 \date{}
@@ -75,7 +76,7 @@ Podnikatelský plán slouží k získání investice na zahájení výroby,
 marketingovou propagaci a rozšíření distribuční sítě.
 
 \subsection{Potřeba investice}
-Základní vklad na zahájení výroby, marketing, tvorbu webové stránky, materály,
+Základní vklad na zahájení výroby, marketing, tvorbu webové stránky, materiály,
 pronájem prostor a další, bude činit cca 3 000 000 Kč.
 
 \section{Představení společnosti}
@@ -431,6 +432,12 @@ několik kanálů, které by měly oslovit cílovou skupinu a zvýšit povědom�
 
 Ne všechny tyto kanály jsou však pro nás vhodné. Vzhledem k našemu omezenému rozpočtu a zaměření na lokální trh se zaměřujeme především na sociální sítě a SEO.
 
+\subsubsection{SEO}
+
+Jedná se o důležitý nástroj pro zvýšení viditelnosti našeho e-shopu ve vyhledávačích.
+Společně se samotnými reklamami nám umožní být při hledání našich produktů mezi prvními výsledky.
+Pro optimalizaci SEO je obvykle nutné najít klíčová slova, která naše cílovou skupina vyhledává.
+
 \subsubsection{Reklamy na Instagramu}
 
 K jedné z nejpoužívanějších sociálních sítí patří Instagram, který je velmi populární mezi mladými lidmi a módními nadšenci.
@@ -438,9 +445,37 @@ Pro naši firmu je Instagram ideálním místem pro propagaci našich produktů 
 Na Instagramu lze umístit různé typy reklam, jako jsou obrázkové příspěvky, videa, Stories nebo Reels.
 Reklamy se cení podle tzv. CPC(Cost-Per-Click), tedy za každého uživatele, který na reklamu klikne.
 
-\pagebreak
+\section{Finanční plán}
 
-\begin{table}
+\subsection{Počáteční investice}
+
+Naše firma zahajuje činost s počátečním kapitálem ve výši 3 000 000 Kč.
+Tento kapitál by měl být dostatečný pro pokrytí základních nákladů,
+jako jsou nájem, platy zaměstnanců, nákup materiálů a marketingové náklady.
+Mezi počáteční náklady patří:
+
+\begin{enumerate}
+  \item \textbf{Nájem} - 30 000 Kč/měsíčně + kauce
+  \item \textbf{Zařízení nájemních prostor} - skládá se z nákupu šicích strojů, nůžek, střihových šablon, materiálů a dalšího vybavení.
+  Bude se jednat o jednorázovou počáteční investici ve výši 500 000 Kč.
+  \item \textbf{Mzda zaměstnanců} - 3 zaměstnanci, 30 000 Kč/měsíčně
+\end{enumerate}
+
+\subsubsection{Marketing a propagace}
+
+Vzhledem k tomu, že předpokládáme, že naše firma bude obsahovat e-shop a
+zakladatelé jsou již v zkušení v IT oboru, tak
+předpokládáme, že náklady na vytvoření e-shopu budou minimální - e-shop
+bude vytvořen vlastními silami.
+
+\vspace{10pt}
+\noindent Co však bude vyžadovat investice, je samotný marketing a propagace.
+Jak již bylo zmíněno, ze sociálních sítí se zaměříme především na Instagram a SEO.
+SEO bude zařízeno námi, jako správci e-shopu(nebude tedy zapotřeba žádných výdajů). Co si budeme
+muset zaplatit, budou reklamy na Instagramu(platformě Meta).
+V následující tabulce jsou umístěny orientační ceny reklam na Instagramu:
+
+\begin{table}[h]
   \centering
   \begin{tabular}{ |c|c| }
     \hline
@@ -459,7 +494,49 @@ Reklamy se cení podle tzv. CPC(Cost-Per-Click), tedy za každého uživatele, k
   \caption{Orientační ceny reklam na Instagramu \cite{reklamy-ig-zoomstudio}}
 \end{table}
 
-\section{Finanční plán}
+\noindent Pokud bychom si udělali mělký průzkum uživatelů instagramu, tak bychom zjistili, že
+naše cílová skupina převážně používá Stories a Reels, takže bychom se měli zaměřit na tyto typy reklam
+a ideálně do nich investovat velkou část našeho rozpočtu. Řekněme tedy, že optimální měsíční
+rozpočet pro reklamy na Instagramu bude 10 000 Kč.
+
+\subsubsection{Bod zvratu a návratnost investic}
+
+Existuje obecná rovnice \cite{bod-zvratu}, která nám umožňuje spočítat bod zvratu, tedy bod, kdy se náklady vyrovnají příjmům.
+Tento bod je důležitý pro určení, kdy se nám investice vrátí a kdy začneme generovat zisk a tímpádem
+být schopni pokrýt další náklady a investice.
+
+\begin{figure}[h]
+  \centering
+  \captionsetup{justification=centering}
+  \begin{equation}
+    Q_{BZ}=\frac{F}{P-V}
+  \end{equation}
+  \caption{Rovnice bodu zvratu - $F$ je fixní náklad, $P$ je cena za jednotku, $V$ je variabilní náklad}
+\end{figure}
+
+\noindent Pokud bychom chtěli do rovnice zahrnout i zisk z jedné prodané jednotky, můžeme použít následující upravenou verzi rovnice:
+
+\begin{figure}[h]
+  \centering
+  \captionsetup{justification=centering}
+  \begin{equation}
+    Q_{BZ}=\frac{F+\text{zisk}}{P-V}
+  \end{equation}
+\end{figure}
+
+\noindent Pokud bychom chtěli spočítat bod zvratu pro naši firmu, museli bychom do rovnice dosadit náklady na marketing, mzdy zaměstnanců a nájem.
+Mezi naše fixní náklady patří zejména nájem, mzdy zaměstnanců a náklady na marketing:
+\begin{itemize}
+  \item Nájem: 30 000 Kč/měsíčně
+  \item Mzdy zaměstnanců: 90 000 Kč/měsíčně
+  \item Marketing: 10 000 Kč/měsíčně
+\end{itemize}
+
+S takovýmito měsíčními náklady můžeme spočítat bod zvratu pro naši firmu.
+Konkrétně bychom došli k výsledku cca 236 prodaných čepic za měsíc, abychom pokryli všechny náklady.
+Pokud je naše výrobní kapacita 600 čepic za měsíc, měli bychom být schopni dosáhnout bodu zvratu a začít generovat zisk.
+Jedná se však pouze o orientační výpočet, který nezahrnuje iniciální investice a další náklady.
+
 \section{Rizika}
 \section{Závěr}
 \section{Seznam použité literatury}
