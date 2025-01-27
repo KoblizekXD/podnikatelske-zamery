@@ -464,6 +464,21 @@ jako jsou nájem, platy zaměstnanců, nákup materiálů a marketingové nákla
 
 \pagebreak
 
+\subsubsection{DPH}
+
+Zákon\footnote{https://www.zakonyprolidi.cz/cs/2004-235} uvádí,
+že pokud obrat firmy přesáhne 2 000 000 Kč za posledních 12 měsíců,
+musí se registrovat k dani z přidané hodnoty(DPH). Vzhledem k tomu, že
+předpokládáme, že náš obrat bude větší než 2 000 000 Kč, budeme muset
+být registrováni k DPH. DPH je 21\% z ceny produktu.
+Pro výpočet DPH, které musíme státu odvést, musíme vzít 21\% z "hrubého příjmu"
+a od něj odečíst 21\% z nákladu za materiál.
+Tato částka bude muset být odvedena státu(každý 25. den v měsíci).
+Pokud tedy vyděláme 360 000 Kč($600\cdot 600$) a materiál nás stál 27 600 Kč,
+musíme odvést 69 804 Kč měsíčně.
+
+\vspace{30pt}
+
 \begin{table}[h]
   \centering
   \begin{tabular}{ | c | c | c | }
@@ -483,6 +498,26 @@ jako jsou nájem, platy zaměstnanců, nákup materiálů a marketingové nákla
 \noindent V počátečních nákladech nejsou zahrnuty věci jako PC, tiskárna nebo kancelářské potřeby, neboť
 předpokládáme, že tyto věci budou již k dispozici zakladatelům.
 
+\noindent Zde jsou dále uvedeny měsíční provozní náklady, které budou nutné pro chod firmy:
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{ | c | c | }
+    \hline
+    \textbf{Náklad} & \textbf{Cena} \\
+    \hline \hline
+    Hrubá mzda & 24 000 Kč \\
+    \hline
+    Sociální poj. & 5 952 Kč \\
+    \hline
+    Zdravotní poj. & 2 160 Kč \\
+    \hline
+    \multicolumn{2}{|c|}{Celkem: 32 112 Kč} \tabularnewline % TODO: Recalculate
+    \hline
+  \end{tabular}
+  \caption{Výdaje za zaměstnance}
+\end{table}
+
 % TODO: Pridat splaceni pujcky
 \begin{table}[h]
   \centering
@@ -492,11 +527,9 @@ předpokládáme, že tyto věci budou již k dispozici zakladatelům.
     \hline \hline
     Nájem & 25 000 Kč & fixní \\
     \hline
-    Hrubá mzda & 30 000 Kč/zam. & fixní \\
+    Náklady na zaměstnance & 32 112 Kč($\times$ 3) & fixní \\
     \hline
-    Sociální poj. & 7 440 Kč/zam. & fixní \\
-    \hline
-    Sociální poj. & 2 700 Kč/zam. & fixní \\
+    DPH & 69 804 Kč & variabilní \\
     \hline
     Materiál & 27 600 Kč & variabilní \\
     \hline
@@ -504,11 +537,13 @@ předpokládáme, že tyto věci budou již k dispozici zakladatelům.
     \hline
     Splátka půjčky & 13 166 Kč & fixní \\
     \hline
-    \multicolumn{3}{|c|}{Celkem: 191 186 Kč} \tabularnewline % TODO: Recalculate
+    \multicolumn{3}{|c|}{Celkem: 236 906 Kč} \tabularnewline
     \hline
   \end{tabular}
   \caption{Měsíční provozní náklady}
 \end{table}
+
+\pagebreak
 
 \subsubsection{Marketing a propagace}
 
@@ -571,8 +606,6 @@ být schopni pokrýt další náklady a investice.
   \end{equation}
   \caption{Rovnice bodu zvratu - $F$ je fixní náklad, $P$ je cena za jednotku, $V$ je variabilní náklad}
 \end{figure}
-
-\pagebreak
 
 \noindent Pokud bychom chtěli do rovnice zahrnout i zisk z jedné prodané jednotky, můžeme použít následující upravenou verzi rovnice:
 
